@@ -29,7 +29,7 @@ const Testimonials = () => {
                 <Marquee pauseOnHover>
                     {testimonialData.map(({ quote, name, avatar }) => (
                         <div className="max-w-6xl px-1">
-                            <Card className="h-82">
+                            <Card className="h-82 bg-secondary text-slate-50">
                                 <CardHeader>
                                     <FaQuoteLeft size={52} className="mx-auto" />
                                 </CardHeader>

@@ -30,10 +30,10 @@ const Pricing = () => {
         ]
     return (
         
-        <section className="py-16">
+        <section className="py-16 bg-slate-50 dark:bg-slate-900">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-3 px-3 lg:px-0">
-                    <div className=" text-center lg:text-start my-auto pr-2 text-slate-50">
+                    <div className=" text-center lg:text-start my-auto pr-2 ">
                         <h2 className="text-4xl font-extrabold">
                             A Zombie for Everyone to Enjoy!
                         </h2>
@@ -73,10 +73,10 @@ const Pricing = () => {
                         </CardBody>
 
                         <CardBody>
-                            <ul className="text-base list-disc">
+                            <ul className="text-base list-disc px-6">
                                 {desc.map((item, index) => (
                                     <li key={index}>
-                                        - {item}
+                                        {item}
                                     </li>
                                 ))}
                             </ul>
