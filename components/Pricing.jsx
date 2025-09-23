@@ -46,8 +46,10 @@ const Pricing = () => {
                         <Button
                             as={Link}
                             variant="light"
+                            size="lg"
                             color="primary"
                             isExternal={true}
+                            className="font-bold"
                             href="https://bivensblueprintllc.hbportal.co/public/68c4169c4d8580002134164b"
                             endContent={<FaAngleRight />}
                         >

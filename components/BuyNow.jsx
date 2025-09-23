@@ -12,7 +12,7 @@ export const BuyNow = () => {
     <>
     <Button 
         onPress={onOpen}
-        color="secondary"
+        color="primary"
         fullWidth
         className="font-semibold"
     >
