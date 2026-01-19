@@ -24,16 +24,16 @@ const Features = () => {
 		<section className="bg-slate-50 py-16 relative dark:bg-slate-900">
             <div className="max-w-7xl mx-auto">
                 <div className="">
-                    <div className="grid md:grid-cols-3 px-3 md:px-0">
+                    <div className="grid md:grid-cols-3 px-3 md:px-0 gap-12">
                         {points.map(({ title, text, icon: Icon }, index) => (
                         <Card key={index} className="p-2 bg-slate-50 dark:bg-slate-900" shadow="none">
                             <CardHeader>
-                                <Icon size={72} className="m-auto mt-2 text-primary" />
+                                <Icon size={56} className="m-auto mt-2 text-primary" />
                             </CardHeader>
 
                             <CardBody>
-                                <h3 className="text-2xl font-semibold text-center min-h-12 leading-tight">{title}</h3>
-                                <p className="mt-2 text-base text-center">{text}</p>
+                                <h3 className={`font-accent text-xl font-semibold text-center min-h-8 leading-tight`}>{title}</h3>
+                                <p className="mt-2 text-lg text-center">{text}</p>
                             </CardBody>
                         </Card>
                     ))}

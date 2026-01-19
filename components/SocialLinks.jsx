@@ -56,7 +56,7 @@ const SocialLinks = () => {
             <div className ="flex justify-center gap-6 text-2xl text-primary">
                 {footerData.map(({ id, link, image: Icon, color }) => (
                     <AppLink key={id} href={link}>
-                        <Icon size={20} className="text-slate-50" />
+                        <Icon size={20} className={`text-slate-50 hover:text-primary`} />
                     </AppLink>
                 ))}
             </div>

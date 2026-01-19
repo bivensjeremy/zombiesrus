@@ -14,7 +14,6 @@ export const BuyNow = () => {
         onPress={onOpen}
         color="primary"
         fullWidth
-        className="font-semibold"
     >
             Buy Now
         </Button>

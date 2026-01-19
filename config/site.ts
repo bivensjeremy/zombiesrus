@@ -7,7 +7,7 @@ export const siteConfig = {
   links: {
     facebook: "https://www.facebook.com/bivensblueprint",
     instagram: "https://www.instagram.com/bivensjeremy",
-    business: "https://www.bivensblueprint.com",
+    business: "https://www.blueprintwebdev.com",
     linkedin: "https://www.linkedin.com/in/bivensjeremy"
   },
   company: {

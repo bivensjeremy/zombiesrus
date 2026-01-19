@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@heroui/button';
 import { Link } from '@heroui/link';
-import clsx from 'clsx';
-import { fontPotter } from '@/config/fonts';
 import { FaApple } from "react-icons/fa";
 
 const Hero = () => (
@@ -10,10 +8,9 @@ const Hero = () => (
         <div className='max-w-7xl mx-auto px-3 md:px-0'>
             <div className='grid md:grid-cols-2 items-center min-h-[50vh] mt-12 md:mt-0'>
                 <div className='flex flex-col pb-6'>
-                    <h1 className={clsx(
-                        fontPotter.className,
-                        "font-bold mb-4 text-5xl md:text-7xl text-slate-50 text-shadow-md text-shadow-background dark:text-slate-900 dark:text-shadow-foreground"
-                    )}>
+                    <h1 className={
+                        "font-header font-bold mb-4 text-5xl md:text-6xl text-slate-50 text-shadow-md text-shadow-background dark:text-slate-900 dark:text-shadow-foreground"
+                    }>
                         Get your own flesh-eating zombie today!
                     </h1>
 
@@ -31,8 +28,8 @@ const Hero = () => (
                                 height={24}
                                 width={28}
                             />
-                            <span className="flex flex-col leading-tight text-left">
-                                <span className="text-[10px] uppercase">Get it on</span>
+                            <span className="flex flex-col leading-tight text-left font-standard">
+                                <span className="text-sm uppercase">Get it on</span>
                                 <span className="text-sm font-semibold">Google Play</span>
                             </span>
                         </Button>
@@ -45,8 +42,8 @@ const Hero = () => (
                             className="bg-black text-white rounded-lg px-4 py-2 flex items-center gap-2"
                         >
                             <FaApple className="text-2xl" />
-                            <span className="flex flex-col leading-tight text-left">
-                                <span className="text-[10px]">Download on the</span>
+                            <span className="flex flex-col leading-tight text-left font-standard">
+                                <span className="text-sm">Download on the</span>
                                 <span className="text-sm font-semibold">App Store</span>
                             </span>
                         </Button>

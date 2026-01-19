@@ -16,9 +16,7 @@ const Navigation = () => {
         <Navbar maxWidth="xl" isBlurred={false} className="bg-transparent" position="static">
             <NavbarContent>
                 <NavbarBrand>
-                    <p className={clsx(
-                        fontPotter.className,
-                        "font-bold text-4xl text-primary text-shadow-md text-shadow-background")}>Zombies-R-Us</p>
+                    <p className="font-header font-bold text-2xl text-primary text-shadow-md text-shadow-background">Zombies-R-Us</p>
                 </NavbarBrand>
             </NavbarContent>
 

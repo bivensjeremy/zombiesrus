@@ -2,9 +2,9 @@ import "@/styles/globals.css";
 import clsx from "clsx";
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
-import { fontBody } from "@/config/fonts";
 import Footer from '@/components/Footer';
 import Navigation from '../components/Navigation';
+import { fontAccent, fontBody, fontHeader, fontStandard } from "@/config/fonts";
 
 export const metadata = {
 	title: {
@@ -54,13 +54,21 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html suppressHydrationWarning lang="en" className="scroll-smooth">
+    <html 
+		suppressHydrationWarning 
+		lang="en" 
+		className={`scroll-smooth
+			${fontAccent.variable}
+			${fontBody.variable}
+			${fontHeader.variable}
+		`}
+
+	>
       <head />
 
       <body
         className={clsx(
-          "min-h-screen text-foreground",
-          fontBody,
+          "min-h-screen text-foreground"
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

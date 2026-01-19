@@ -34,12 +34,12 @@ const Pricing = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-3 px-3 lg:px-0">
                     <div className=" text-center lg:text-start my-auto pr-2 ">
-                        <h2 className="text-4xl font-extrabold">
+                        <h2 className="text-4xl font-extrabold font-accent">
                             A Zombie for Everyone to Enjoy!
                         </h2>
 
 
-                        <p className="my-4">
+                        <p className="my-4 text-xl">
                             Select from one of our generous options. Our Zombies have a variety of characteristics that are sure to keep you busy for days on end!
                         </p>
 
@@ -50,7 +50,7 @@ const Pricing = () => {
                             color="primary"
                             isExternal={true}
                             className="font-bold"
-                            href="https://bivensblueprintllc.hbportal.co/public/68c4169c4d8580002134164b"
+                            href="https://app.hellobonsai.com/f/a9e88748aeb3da9"
                             endContent={<FaAngleRight />}
                         >
                             Contact me to discuss other options
@@ -60,9 +60,8 @@ const Pricing = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 col-span-2 gap-3">
                 {priceInfo.map(({ title, price, desc, image }, index) => (
                     <Card key={index} className="max-w-sm mx-auto w-full">
-                        <CardHeader className={clsx(fontPotter.className,
-                        "px-4 flex-col")}>
-                            <h4 className="font-bold text-2xl">{title}</h4>
+                        <CardHeader className="px-4 flex-col font-accent">
+                            <h4 className="text-2xl">{title}</h4>
                             <p className="text-4xl font-bold">{price}</p>
                         </CardHeader>
 

@@ -1,26 +1,31 @@
-import { Caveat, Fira_Code as FontMono, Inter as FontSans, Potta_One, Roboto } from "next/font/google";
+import { Gloria_Hallelujah, Patrick_Hand, Potta_One, Special_Elite } from "next/font/google";
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-export const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-});
-
-export const fontPotter = Potta_One({
+export const fontCaveat = Gloria_Hallelujah({
   subsets: ['latin'],
-  weight: '400'
-});
+  weight: '400',
+  fallback: ["system-ui", "Arial", "sans-serif"],
+})
 
-export const fontBody = Roboto({
+//Patrick Hand for body
+export const fontBody = Patrick_Hand({
   subsets: ['latin'],
-  weight: ['400', '800']
-});
+  weight: '400',
+  variable: '--font-body',
+  fallback: ["system-ui", "Arial", "sans-serif"],
+})
 
-export const fontCaveat = Caveat({
+// Special Elite 
+export const fontAccent = Special_Elite({
   subsets: ['latin'],
-  weight: 'variable'
+  weight: '400',
+  variable: '--font-accent',
+  fallback: ["system-ui", "Arial", "sans-serif"],
+})
+
+// Potta One for Header
+export const fontHeader = Potta_One({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-header',
+  fallback: ["system-ui", "Arial", "sans-serif"],
 })

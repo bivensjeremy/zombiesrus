@@ -7,8 +7,8 @@ const CTA = () => {
     return (
         <section className="bg-background">
             <div className="max-w-7xl mx-auto py-24 text-center">
-                <h2 className="font-bold text-3xl md:text-5xl mb-6 text-slate-50">
-                    What are you waiting for? The Apocalypse??? <br/>Take the plunge today!
+                <h2 className="font-accent font-bold text-3xl md:text-4xl mb-6 text-slate-50">
+                    What are you waiting for? The Apocalypse?? <br/>Take the plunge today!
                 </h2>
 
                 <div className="flex gap-4 justify-center">
@@ -24,7 +24,7 @@ const CTA = () => {
                                 alt='google play store logo'
                                 height={24}
                             />
-                            <span className="flex flex-col leading-tight text-left">
+                            <span className="font-standard flex flex-col leading-tight text-left">
                                 <span className="text-[10px] uppercase">Get it on</span>
                                 <span className="text-sm font-semibold">Google Play</span>
                             </span>
@@ -38,7 +38,7 @@ const CTA = () => {
                             className="bg-black text-white rounded-lg px-4 py-2 flex items-center gap-2"
                         >
                             <FaApple className="text-2xl" />
-                            <span className="flex flex-col leading-tight text-left">
+                            <span className="font-standard flex flex-col leading-tight text-left">
                                 <span className="text-[10px]">Download on the</span>
                                 <span className="text-sm font-semibold">App Store</span>
                             </span>
